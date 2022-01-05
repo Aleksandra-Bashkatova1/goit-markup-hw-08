@@ -105,21 +105,46 @@ body {
 
 .container__header {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 80px;
-  width: 100%;
   margin: 0 auto;
 }
 
 .header__navigation {
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__navigation {
+    display: flex;
+  }
 }
 
 .nav {
   justify-content: center;
   align-items: baseline;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .nav--color {
@@ -200,6 +225,18 @@ body {
   margin-right: 93px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo__web {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__web {
+    margin-right: 93px;
+  }
+}
+
 .logo__web--footer {
   font-family: Raleway;
   font-weight: 400;
@@ -236,8 +273,36 @@ body {
   display: none;
 }
 
-.nav__connect--left {
-  margin-left: 305px;
+@media screen and (min-width: 768px) {
+  .container__connect {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    flex-wrap: wrap;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__connect--left {
+    margin-left: auto;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__connect--left {
+    margin-left: auto;
+    justify-content: space-between;
+  }
 }
 
 .nav__item-email {
@@ -249,6 +314,18 @@ body {
   margin-right: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__item-email {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item-email {
+    font-size: 14px;
+  }
+}
+
 .nav__item-tel {
   font-weight: 500;
   font-size: 14px;
@@ -256,6 +333,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--fourth-text-color);
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__item-tel {
+    font-size: 12px;
+    position: absolute;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item-tel {
+    font-size: 14px;
+    position: relative;
+  }
 }
 
 .header__icon-tel {
@@ -269,6 +361,22 @@ body {
   fill: var(--fifeth-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .header__icon-tel {
+    font-size: 12px;
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__icon-tel {
+    height: 14px;
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .header__icon-email {
   width: 16px;
   height: 12px;
@@ -278,6 +386,22 @@ body {
 
 .header__icon-email:hover {
   fill: var(--fifeth-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header__icon-email {
+    font-size: 12px;
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__icon-email {
+    font-size: 12px;
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .line {
@@ -293,6 +417,12 @@ body {
 
 .open__menu--mob:hover, .open__menu--mob:focus {
   fill: var(--fifeth-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .open__menu--mob {
+    display: none;
+  }
 }
 
 .close__menu--mob {
@@ -912,6 +1042,7 @@ body {
 }
 
 .social__container {
+  padding-top: 12px;
   margin-bottom: 60px;
 }
 
@@ -995,6 +1126,10 @@ body {
   fill: #ffffff;
 }
 
+.input__container {
+  padding-top: 12px;
+}
+
 @media screen and (min-width: 768px) {
   .input__container {
     align-items: center;
@@ -1070,12 +1205,12 @@ body {
   margin-bottom: 15px;
 }
 
-.btn-color .blue-btn .blue-btn:hover {
+.btn-color .blue-btn.blue-btn:hover {
   background-color: var(--fifeth-text-color);
   color: var(--first-text-color);
 }
 
-.btn-color .blue-btn .blue-btn:focus {
+.btn-color .blue-btn.blue-btn:focus {
   background-color: var(--fifeth-text-color);
   color: var(--first-text-color);
 }

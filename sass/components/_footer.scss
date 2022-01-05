@@ -85,7 +85,7 @@
 }
 
 .social__container {
-  // align-items: flex-end;
+  padding-top: 12px;
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
@@ -159,6 +159,7 @@
 }
 
 .input__container {
+  padding-top: 12px;
   @media screen and (min-width: 768px) {
     align-items: center;
     justify-content: center;
@@ -171,9 +172,6 @@
   justify-content: center;
 }
 
-// .input-form__container {
-// }
-
 .input__line {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -185,6 +183,7 @@
   border-radius: 4px;
   padding-left: 16px;
   padding-right: 16px;
+
   color: #ffffff;
   @media screen and (min-width: 1200px) {
     width: 358px;
