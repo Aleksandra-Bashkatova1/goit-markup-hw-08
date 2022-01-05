@@ -30,9 +30,9 @@
 
 <body> 
   
-  <!-- <header>
+  <header>
       <div class="container container__header">   
-        <nav class="header__navigation">
+        <nav class="header__navigation ">
           <a href class="logo__web">Web<span class="logo__studio-header">Studio</span></a>
         
           <ul class="nav  nav--color">
@@ -68,10 +68,58 @@
               </li>
             </ul>
           </div>
-      </div>
+         
+          <button type="button" class="open__menu--mob">
+            <svg class="icon__menu--mob" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+          </div> 
+            <div class="mob__menu is-hidden">
+              <div class="container">
+                <div class="mob__menu--top"> 
+                  <button type="button" class="close__menu--mob">
+                      <svg class="icon__menu--mob" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                      </svg>
+                  </button>
+                      <ul class="mob__nav">
+                          <li class="mob__item  ">
+                            <a class="mob__link" href="">Студия</a>
+                          </li>
+                          <li class="mob__item  ">
+                            <a class="mob__link" href="./portfolio.html">Портфолио</a>
+                          </li>
+                          <li class="mob__item  ">
+                            <a class="mob__link" href="">Контакты</a>
+                          </li>
+                      </ul>
+                 </div>
+                <div class="mob__menu--bottom">
+                        <div class="mob__contacst">
+                          <ul>
+                            <li class="mob__item--contact">  <a class="mob__nav--link-tel " href="tel:+380961111111">+38 096 111 11 11</a></li>
+                              <li class="mob__item--contact">  <a class="mob__nav--link-mail " href="info@devstudio.com">info@devstudio.com</a></li>
+                          </ul>
+                        </div>
+                              <div class="mob__social">
+                                    <ul class="mob__social--list">
+                                          <li class=""> <a href class="mob__social--link ">Instagram</a></li>
+                                          <li class="line__menu--mob"> <a href class="mob__social--link">Twitter</a></li>
+                                          <li class="line__menu--mob"> <a href class="mob__social--link">Facebook</a></li>
+                                          <li class="line__menu--mob"> <a href class="mob__social--link">LinkedIn</a></li>
 
-  </header> -->
-  <main>
+                                    </ul>
+                              
+                             
+                              </div>
+      
+                </div>
+          </div>
+          </div>
+        
+  </header>
+  <main> 
     <section class="hero__section">
       
         <div class="container  hero__container">
@@ -493,11 +541,11 @@
   <footer class="footer__section">
   
   
-      <div class="container footer__container ">
+      <div class="container footer__container">
         <div class="container-logo__adress">
-            <a href class="logo__web">Web<span class="logo__studio--footer">Studio</span></a>
+            <a href class="logo__web--footer">Web<span class="logo__studio--footer">Studio</span></a>
             <address>
-                  <div class="contacts__container">  
+                 
                              
                     <ul class="contacts__nav">
                       
@@ -511,7 +559,7 @@
                              
                     </ul>
                     
-                  </div>
+                  
         </div>
                 <div class="social__container">
                    <h3 class="footer__title">Присоединяйтесь</h3>
@@ -633,7 +681,7 @@
       </div>                                        
           </label>
           <div class="modal-field">
-            <label for="comment" class="input-form-text"
+            <label for="comment" class="input-form__text"
                 >Комментарии</label>
               <textarea 
                   id="comment"
@@ -656,7 +704,7 @@
                       ></use>
                     </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox_link">
+              Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox__link">
                 Условия договора</a> 
           </label> 
         </div>
@@ -667,9 +715,8 @@
     </div>
 
   </div>
-  <script src="./js/modal.js">
-   
-  </script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 
 </body>
 

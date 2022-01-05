@@ -1,7 +1,8 @@
 .modal {
   padding: 40px;
-  min-height: 581px;
-  width: 528px;
+  width: 450px;
+  height: 609px;
+
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -10,6 +11,14 @@
   transform: scale(-0.1) rotate(180deg);
   transform: translate(-50%, -50%);
   transition: transform 400ms;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__close {
@@ -153,7 +162,16 @@
   letter-spacing: 0.03em;
   color: #757575;
   height: 24px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    .checkbox__link {
+      text-decoration-line: underline;
+      color: #2196f3;
+      margin-left: 5px;
+    }
+  }
 }
+
 .checkbox__link {
   text-decoration-line: underline;
   color: #2196f3;
