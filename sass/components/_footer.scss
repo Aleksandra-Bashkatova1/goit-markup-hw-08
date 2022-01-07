@@ -3,6 +3,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+  @media screen and (min-width: 4800px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
 }
 
 .footer__container {
@@ -15,14 +21,17 @@
     justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
 }
 
 .container-logo__adress {
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+  height: 130px;
   text-align: center;
   @media screen and (min-width: 1200px) {
     text-align: left;
+    padding-left: 0 auto;
   }
 }
 
@@ -39,7 +48,9 @@
 // }
 
 .contacts__nav {
-  text-align: center;
+  // width: 206px;
+  // height: 44px;
+  // text-align: center;
   @media screen and (min-width: 768px) {
     text-align: center;
   }
@@ -58,6 +69,7 @@
 
 .contacts__item--map {
   margin-top: 20px;
+  // width: 232px;
 }
 .contacts__item--mail {
   margin-top: 9px;
@@ -85,10 +97,14 @@
 }
 
 .social__container {
-  padding-top: 12px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 12px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    // margin-right: 0 auto;
   }
 }
 
@@ -101,14 +117,17 @@
   text-transform: uppercase;
   color: #ffffff;
   font-style: normal;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
   @media screen and (min-width: 480px) {
     margin-bottom: 20px;
+    // margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     text-align: left;
+    margin-bottom: 20px;
   }
 }
 .social__nav {
@@ -123,7 +142,6 @@
 .social__item {
   width: 44px;
   height: 44px;
-  margin-top: 20px;
 }
 .social__item + .social__item {
   margin-left: 10px;
@@ -159,10 +177,18 @@
 }
 
 .input__container {
-  padding-top: 12px;
+  margin-top: 60px;
+  // padding-top: 60px;
   @media screen and (min-width: 768px) {
     align-items: center;
     justify-content: center;
+    // margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    margin: 0;
   }
 }
 
@@ -198,6 +224,7 @@
   margin-top: 20px;
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
+    margin-top: 0;
   }
 }
 
@@ -208,3 +235,7 @@
   align-items: center;
   justify-content: center;
 }
+
+// .input-form__container {
+//   // height: 50px;
+// }

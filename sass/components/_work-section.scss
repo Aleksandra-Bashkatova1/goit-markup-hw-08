@@ -5,18 +5,18 @@
 }
 
 .work__section {
-  padding-left: 15px;
+  // padding-left: 15px;
   padding-bottom: 94px;
 }
 
 .work__container {
   margin: 0 auto;
-  width: 1170px;
-  height: 386px;
 }
 
 .work__nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work__item {
